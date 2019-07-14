@@ -1,0 +1,148 @@
+/* MAIN CONTROL */
+* {
+    box-sizing: border-box;
+}
+
+/* ELEMENTS */
+header {
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black        
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;    
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    -webkit-box-shadow: 3px 1px 11px 2px rgba(0,0,0,0.37); 
+    box-shadow: 3px 1px 11px 2px rgba(0,0,0,0.37);
+}
+
+
+/* CLASSES */
+.page-container {
+    width: 100%;
+    height: 85%;
+    padding: 5px;
+    margin-top: 5px;    
+}
+
+.dom-img {
+    width: 300px;
+    height: 300px;
+    margin-left: 10%;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 3px 1px 11px 2px rgba(0,0,0,0.37);
+}
+
+    /* NAV BAR */
+.topnav a {    
+    margin-top: 5px;
+    border: none;
+    background: black;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: capitalize;
+    border-radius: 6px;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+.topnav a:hover {
+    color: #ff8260 !important;
+    font-weight: 700 !important;
+    background: transparent;
+    letter-spacing: 3px;        
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+.btn {
+    margin-top: 5px;
+    margin-left: 25px;
+    border: none;
+    background: black;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 10px;
+    text-transform: capitalize;
+    border-radius: 6px;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    color: #ff8260 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: #222;
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+.light-text {
+    content: "Light Mode";
+}
+.dark-text {
+    content: "Dark Mode";
+}
+
+/* IDs */
+
+/* END MAIN CONTROL */
+
+/* RESPONSIVE RESIZE */
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (min-width: 400px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .box {
+        top: 50%;
+        height: 100%;
+    }
+    .dom-img {
+        width: 450px;
+        height: 450px;
+    } 
+}
+@media (max-width: 400px) {
+
+
+    .dom-img {
+        width: 300px;
+        height: 300px;        
+    }
+
+}
+
+
+
+
+
+/* Unused But Saved For Reference */
+
+/* .folder-shadow {
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+} */

@@ -1,0 +1,20 @@
+/* BOX SLIDER */
+
+#container {
+    overflow: hidden;
+    width: 100%;    
+}
+
+.box {    
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 95%;    
+    border: 2px solid black;
+    top: 40%;    
+} 
+
+.box:hover {
+    border: 2px dashed black;    
+}
+ 
+
